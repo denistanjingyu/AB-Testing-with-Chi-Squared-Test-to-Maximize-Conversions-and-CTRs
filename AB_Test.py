@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import scipy
 import matplotlib.pyplot as plt
-import scipy
 from scipy import stats
 
 df = pd.read_csv('C:\\Users\\user\\Desktop\\ab_data.csv')
