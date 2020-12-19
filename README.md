@@ -4,9 +4,7 @@
 
 Table of Contents :bookmark_tabs:
 =================
-- [Scope of project](#scope-of-project)
-- [Abstract of research paper](#abstract-of-research-paper)
-- [Research poster](#research-poster)
+- [Overview](#overview)
 - [Code and Resources Used](#code-and-resources-used)
 
 ## Overview
