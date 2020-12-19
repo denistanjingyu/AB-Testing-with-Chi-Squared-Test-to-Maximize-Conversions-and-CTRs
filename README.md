@@ -14,5 +14,6 @@ A/B testing in its simplest sense is an experiment on two variants to see which 
 
 ## Code and Resources Used
 **Python:** Version 3.7.4
+
 **Packages:** pandas, numpy, matplotlib, scipy
 
