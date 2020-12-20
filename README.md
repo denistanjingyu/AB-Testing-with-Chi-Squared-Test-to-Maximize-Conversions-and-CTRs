@@ -15,3 +15,5 @@ A/B testing in its simplest sense is an experiment on two variants to see which 
 
 **Packages:** pandas, numpy, matplotlib, scipy
 
+**Dataset:** https://www.kaggle.com/zhangluyuan/ab-testing
+
