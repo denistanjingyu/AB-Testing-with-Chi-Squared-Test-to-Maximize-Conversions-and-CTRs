@@ -16,6 +16,8 @@ In this project, we will be using the chi-squared test to validate an A/B test p
 ## Dataset
 The dataset used to perform the A/B test was taken from [Kaggle](https://www.kaggle.com/zhangluyuan/ab-testing).
 
+This dataset contains the result of an A/B test where two groups, the control group and the treatment group, were exposed to an old webpage and a new webpage respectively. The purpose of this test was to determine if the new webpage resulted in a significant increase in conversions compared to the old webpage. Each row represents a unique user and shows whether they’re in the control or treatment group and whether they converted or not.
+
 ## Code and Resources Used
 **Python:** Version 3.7.4
 
