@@ -5,6 +5,9 @@
 Table of Contents :bookmark_tabs:
 =================
 - [Overview](#overview)
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Chi-Squared Test](#chi-squared-test)
 - [Code and Resources Used](#code-and-resources-used)
 
 ## Overview
