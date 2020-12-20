@@ -14,7 +14,7 @@ A/B testing in its simplest sense is an experiment on two variants to see which 
 In this project, we will be using the chi-squared test to validate an A/B test performed by a company to test the effectiveness of a new webpage in increasing conversion rates.
 
 ## Dataset
-The dataset used to perform the A/B test was taken from [Kaggle](https://www.google.com).
+The dataset used to perform the A/B test was taken from [Kaggle](https://www.kaggle.com/zhangluyuan/ab-testing).
 
 ## Code and Resources Used
 **Python:** Version 3.7.4
