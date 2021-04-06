@@ -1,4 +1,4 @@
-# import libraries
+# Import libraries
 import numpy as np
 import pandas as pd
 import scipy
@@ -7,29 +7,29 @@ from scipy import stats
 
 df = pd.read_csv('C:\\Users\\user\\Desktop\\ab_data.csv')
 
-# data wrangling
-# verify that control group users saw old page and treatment saw new page
+# Data wrangling
+# Verify that control group users saw old page and treatment saw new page
 df.groupby(['group', 'landing_page']).count()
 
-# since unable to verify original group of users, let's remove them
+# Since unable to verify original group of users, let's remove them
 df_cleaned = df.loc[(df['group'] == 'control') & (df['landing_page'] == 'old_page') |
                     (df['group'] == 'treatment') & (df['landing_page'] == 'new_page')]
 
-# verify cleaned data
+# Verify cleaned data
 df_cleaned.groupby(['group', 'landing_page']).count()
 
-# checking for duplicate values based on user id
+# Checking for duplicate values based on user id
 # 1 duplicate found
 df_cleaned['user_id'].duplicated().sum()
 
-# locate user id for for duplicate value
-# user saw new page twice and didn't convert both times
-# for standardization, we will keep first trial for all users
+# Locate user id for for duplicate value
+# User saw new page twice and didn't convert both times
+# For standardization, we will keep first trial for all users
 df_cleaned[df_cleaned.duplicated(['user_id'], keep = False)]
 df_cleaned = df.drop_duplicates(subset = 'user_id', keep = 'first')
 
-# exploratory data analysis
-# proportion of conversions for both groups
+# Exploratory data analysis
+# Proportion of conversions for both groups
 groups = df_cleaned.groupby(['group', 'landing_page', 'converted']).size()
 groups.plot.bar()
 
